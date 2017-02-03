@@ -139,13 +139,18 @@ rotate(angle)
   transform rotate(angle)
 
 /*common elements*/
-div, a, form, input, textarea
+div, a, form, input, textarea, section, article, ul, li
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
 a
   text-decoration none
   color inherit
+
+ul
+  list-style-type none
+  -webkit-padding-start 0
 
 btnStyle()
   display inline-block
@@ -174,14 +179,10 @@ input[type=button] + input[type=button]
   text-transform uppercase
   z-index 200000
 
-form,
-.insert
-  width 80%
-  margin 20px auto 20px auto
+form
   label
     font-family font-bold
     font-size med-size
-    display inline
   input[type='file'], input[type='phone'], input[type='text'], input[type='email'], input[type='tel'], input[type='password'], textarea, input[type='search'], input[type='date']
     appearance( none )
     font-family font-bold
@@ -249,16 +250,6 @@ form,
     margin 0.3rem
   legend
     color grey
-
-.image-wrapper
-  margin 0px
-  position relative
-  display block
-  float left
-  img
-    height 100px
-  input[type=checkbox]
-    position absolute
 
 .facebookBtn
   display block
